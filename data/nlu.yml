@@ -1,0 +1,232 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - why not
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: nlu_fallback
+  examples: |
+    - What is RPA
+    - What is NLU
+    - What is Data Science
+    - What is BPM
+######################################################
+
+- intent: about_marlabs
+  examples: |
+    - Tell me something about marlabs?
+    - Tell me about marlabs?
+    - Show something about marlabs?
+    - About Marlabs?
+    - I want to know more about Marlabs?
+    - I'm interested to know about marlabs?
+    - Tell me something more about marlabs?
+    - Marlabs Company information?
+    - Marlabs information?
+    - Information of marlabs?
+    - Marlabs info?
+    - Tell somethings about your company?
+    - I want to know more about your company?
+    - Share something about marlabs?
+    - Tell some information about marlabs?
+    - Marlabs?
+    - Marlabs company details?
+    - Tell some details about marlabs?
+    - Details about marlabs?
+
+- intent: what_do_you_do
+  examples: |
+    - What do you do?
+    - What marlabs does?
+    - What marlabs have done?
+    - What your company does?
+    - What you do?
+    - Can you tell me more about Marlabs and what they do?
+    - Can you tell me more about Marlabs and the work they do?
+    - What industries does Marlabs work in?
+    - Can you give me a brief overview of Marlabs and its business?
+    - What services or products does Marlabs offer?
+    - Can you provide more information about Marlabs and the services they offer?
+
+- intent: talk_to_advisor
+  examples: |
+    - I have some questions that I'd like to discuss with a digital advisor?
+    - Can I speak with a digital advisor to get some advice on my situation?
+    - I'm interested in getting some guidance from a digital advisor?
+    - Is there a way to speak with a digital advisor about my concerns?
+    - I'm looking for a digital advisor to talk to about my situation?
+    - I'd like to speak with a digital advisor to discuss my options?
+    - Can I get in touch with a digital advisor to ask some questions?
+    - I have some concerns that I'd like to talk to a digital advisor about?
+    - Is there a way to consult with a digital advisor about my situation?
+    - I'm interested in speaking with a digital advisor to get some guidance?
+    - I'd like to speak with a digital advisor about my options?
+    - Is it possible to get in touch with a digital advisor to ask some questions?
+    - I have some concerns that I'd like to discuss with a digital advisor?
+    - Can I speak with a digital advisor to get some advice on my concerns?
+    - I'm looking for a digital advisor to talk to. Is there someone I can speak with?
+    - Can I speak with a digital advisor to get some guidance on my situation?
+    - I have some questions and I'm wondering if I can speak with a digital advisor.
+    - Is there a way to get in touch with a digital advisor for some advice?
+    - Is there someone I can speak with?
+    - Can I speak with a digital advisor?
+    - I'd like to get some advice from a digital advisor?
+    - I have a question and I'm wondering if I can speak with a digital advisor.
+    - Is there a way to consult with a digital advisor about my situation?
+    - I'm looking for a digital advisor to talk to.
+    - I'd like to consult with a digital advisor about my situation?
+    - Can I speak with a digital advisor to get some advice on my concerns?
+    - Is it possible to have a conversation with a digital advisor to discuss my options?
+    - I have some questions that I'd like to ask a digital advisor?
+    - I'm looking for a digital advisor to talk to?
+    - I'd like to speak with a digital advisor about my options?
+    - Can I speak with a digital advisor?
+    - I'm looking for a digital advisor to talk to. Is there someone I can speak witr
+  
+- intent: marlabs_career
+  examples: |
+    - I'm interested in a career with Marlabs?
+    - Show something about marlabs career?
+    - Marlabs career?
+    - Career of marlabs?
+    - Show marlabs career?
+    - Career?
+    - Tell something about Marlabs career?
+    - campany career?
+    - Tell something about company career?
+    - Share your career?
+    - I want to know more about marlabs career?
+    - show your company career?
+    - I'm interested in a job with Marlabs?
+    - Show something about jobs at marlabs?
+    - Marlabs jobs?
+    - Jobs at marlabs?
+    - Show marlabs jobs page?
+    - Job?
+    - Tell something about Marlabs new opening?
+    - campany new openings?
+    - Tell something about company new jobs opening?
+    - Share your new openings?
+    - I want to know more about marlabs new job openings?
+    - show your company job portal?
+
+- intent: latest_publications
+  examples: |
+    - show marlabs latest publications?
+    - How do I find recent publications?
+    - Can you provide latest publications?
+    - Any publications available about business and technology?
+    - Is there any publications regarding technology? 
+    - Could you list out recent publications about business and technology
+
+    - How do I find recent Case studies ?
+    - Can you provide latest Case studies ?
+    - Any Case studies  available about business and technology?
+    - Is there any Case studies  regarding technology? 
+    - Could you list out recent Case studies  about business and technology
+
+    - How do I find recent Whitepapers ?
+    - Can you provide latest Whitepapers ?
+    - Any Whitepapers  available about business and technology?
+    - Is there any Whitepapers  regarding technology? 
+    - Could you list out recent Whitepapers  about business and technology
+
+    - How do I find recent Podcasts?
+    - Can you provide latest Podcasts?
+    - Any Podcasts available about business and technology?
+    - Is there any Podcasts regarding technology? 
+    - Could you list out recent Podcasts about business and technology
+
+    - How do I find recent Videos?
+    - Can you provide latest Videos?
+    - Any Videos available about business and technology?
+    - Is there any Videos regarding technology? 
+    - Could you list out recent Videos about business and technology

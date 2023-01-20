@@ -1,0 +1,57 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+  - nlu_fallback
+
+  - about_marlabs
+  - what_do_you_do
+  - talk_to_advisor
+  - marlabs_career
+  - latest_publications
+
+actions:
+- action_utter_greet
+- action_utter_menu
+- action_utter_goodbye
+- action_utter_please_rephrase
+- action_utter_can_i_help_more
+- action_utter_type_query_below
+
+- action_utter_about_marlabs
+- action_utter_what_do_you_do
+- action_utter_talk_to_advisor
+- action_utter_marlabs_career
+- action_utter_latest_publications
+
+responses:
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  # utter_goodbye:
+  # - text: "Goodbye! It was nice talking to you."
+  # - text: "Bye for now. Have a great day!"
+  # - text: "Thank you for chatting with me. Bye!"
+  # - text: "Goodbye! If you have any more questions, don't hesitate to ask."
+  # - text: "Bye, have a great day."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

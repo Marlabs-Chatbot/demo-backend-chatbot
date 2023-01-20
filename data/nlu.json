@@ -1,0 +1,57 @@
+{
+  "version": "3.1",
+  "nlu": [
+    {
+      "intent": "greet",
+      "examples": "- hey\n- hello\n- hi\n- hello there\n- good morning\n- good evening\n- moin\n- hey there\n- let's go\n- hey dude\n- goodmorning\n- goodevening\n- good afternoon\n"
+    },
+    {
+      "intent": "goodbye",
+      "examples": "- cu\n- good by\n- cee you later\n- good night\n- bye\n- goodbye\n- have a nice day\n- see you around\n- bye bye\n- see you later\n"
+    },
+    {
+      "intent": "affirm",
+      "examples": "- yes\n- y\n- indeed\n- of course\n- that sounds good\n- correct\n- sure\n- why not\n"
+    },
+    {
+      "intent": "deny",
+      "examples": "- no\n- n\n- never\n- I don't think so\n- don't like that\n- no way\n- not really\n"
+    },
+    {
+      "intent": "mood_great",
+      "examples": "- perfect\n- great\n- amazing\n- feeling like a king\n- wonderful\n- I am feeling very good\n- I am great\n- I am amazing\n- I am going to save the world\n- super stoked\n- extremely good\n- so so perfect\n- so good\n- so perfect\n"
+    },
+    {
+      "intent": "mood_unhappy",
+      "examples": "- my day was horrible\n- I am sad\n- I don't feel very well\n- I am disappointed\n- super sad\n- I'm so sad\n- sad\n- very sad\n- unhappy\n- not good\n- not very good\n- extremly sad\n- so saad\n- so sad\n"
+    },
+    {
+      "intent": "bot_challenge",
+      "examples": "- are you a bot?\n- are you a human?\n- am I talking to a bot?\n- am I talking to a human?\n"
+    },
+    {
+      "intent": "nlu_fallback",
+      "examples": "- What is RPA\n- What is NLU\n- What is Data Science\n- What is BPM\n"
+    },
+    {
+      "intent": "about_marlabs",
+      "examples": "- Tell me something about marlabs?\n- Tell me about marlabs?\n- Show something about marlabs?\n- About Marlabs?\n- I want to know more about Marlabs?\n- I'm interested to know about marlabs?\n- Tell me something more about marlabs?\n- Marlabs Company information?\n- Marlabs information?\n- Information of marlabs?\n- Marlabs info?\n- Tell somethings about your company?\n- I want to know more about your company?\n- Share something about marlabs?\n- Tell some information about marlabs?\n- Marlabs?\n- Marlabs company details?\n- Tell some details about marlabs?\n- Details about marlabs?\n"
+    },
+    {
+      "intent": "what_do_you_do",
+      "examples": "- What do you do?\n- What marlabs does?\n- What marlabs have done?\n- What your company does?\n- What you do?\n- Can you tell me more about Marlabs and what they do?\n- Can you tell me more about Marlabs and the work they do?\n- What industries does Marlabs work in?\n- Can you give me a brief overview of Marlabs and its business?\n- What services or products does Marlabs offer?\n- Can you provide more information about Marlabs and the services they offer?\n"
+    },
+    {
+      "intent": "talk_to_advisor",
+      "examples": "- I have some questions that I'd like to discuss with a digital advisor. Is that possible?\n- Can I speak with a digital advisor to get some advice on my situation?\n- I'm interested in getting some guidance from a digital advisor. How can I do that?\n- Is there a way to speak with a digital advisor about my concerns?\n- I'm looking for a digital advisor to talk to about my situation. Can you help me find one?\n- I'd like to speak with a digital advisor to discuss my options. Is that possible?\n- Can I get in touch with a digital advisor to ask some questions?\n- I have some concerns that I'd like to talk to a digital advisor about. Is there someone I can speak with?\n- Is there a way to consult with a digital advisor about my situation?\n- I'm interested in speaking with a digital advisor to get some guidance. How can I do that?\n- I'd like to speak with a digital advisor about my options. Can you help me with that?\n- Is it possible to get in touch with a digital advisor to ask some questions?\n- I have some concerns that I'd like to discuss with a digital advisor. Is that possible?\n- Can I speak with a digital advisor to get some advice on my concerns?\n- I'm looking for a digital advisor to talk to. Is there someone I can speak with?\n- Can I speak with a digital advisor to get some guidance on my situation?\n- I have some questions and I'm wondering if I can speak with a digital advisor.\n- Is there a way to get in touch with a digital advisor for some advice?\n- I'm looking for a digital advisor to talk to. Is there someone I can speak with?\n- Can I speak with a digital advisor?\n- I'd like to get some advice from a digital advisor. Is that possible?\n- I have a question and I'm wondering if I can speak with a digital advisor.\n- Is there a way to consult with a digital advisor about my situation?\n- I'm looking for a digital advisor to talk to. Is there someone I can speak with?\n- I'd like to consult with a digital advisor about my situation. Is that possible?\n- Can I speak with a digital advisor to get some advice on my concerns?\n- Is it possible to have a conversation with a digital advisor to discuss my options?\n- I have some questions that I'd like to ask a digital advisor. Can you help me find one?\n- I'm looking for a digital advisor to talk to. Can you help me find one?\n- I'd like to speak with a digital advisor about my options. Is that possible?\n- Can I speak with a digital advisor to get some guidance on my situation?\n- Is there a way to consult with a digital advisor about my concerns?\n- I'm interested in getting advice from a digital advisor. How can I do that?\n- I'm looking for a digital advisor to talk to. Is there someone I can speak with?\n"
+    },
+    {
+      "intent": "marlabs_career",
+      "examples": "- I'm interested in a career with Marlabs?\n- Show something about marlabs career?\n- Marlabs career?\n- Career of marlabs?\n- Show marlabs career?\n- Career?\n- Tell something about Marlabs career?\n- campany career?\n- Tell something about company career?\n- Share your career?\n- I want to know more about marlabs career?\n- show your company career?\n"
+    },
+    {
+      "intent": "latest_publications",
+      "examples": "- show marlabs latest publications?\n- How do I find recent publications?\n- Can you provide latest publications?\n- Any publications available about business and technology?\n- Is there any publications regarding technology? \n- Could you list out recent publications about business and technology\n\n- How do I find recent Case studies ?\n- Can you provide latest Case studies ?\n- Any Case studies  available about business and technology?\n- Is there any Case studies  regarding technology? \n- Could you list out recent Case studies  about business and technology\n\n- How do I find recent Whitepapers ?\n- Can you provide latest Whitepapers ?\n- Any Whitepapers  available about business and technology?\n- Is there any Whitepapers  regarding technology? \n- Could you list out recent Whitepapers  about business and technology\n\n- How do I find recent Podcasts?\n- Can you provide latest Podcasts?\n- Any Podcasts available about business and technology?\n- Is there any Podcasts regarding technology? \n- Could you list out recent Podcasts about business and technology\n\n- How do I find recent Videos?\n- Can you provide latest Videos?\n- Any Videos available about business and technology?\n- Is there any Videos regarding technology? \n- Could you list out recent Videos about business and technology"
+    }
+  ]
+}
