@@ -6,7 +6,7 @@ WORKDIR /app
 # Change back to root user to install dependencies
 USER root
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 COPY ./actions /app/actions
 
