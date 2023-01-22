@@ -6,6 +6,7 @@ WORKDIR /app
 # Change back to root user to install dependencies
 USER root
 
+COPY requirements.txt /app/requirements.txt
 RUN pip install -r requirements.txt
 
 COPY ./actions /app/actions
