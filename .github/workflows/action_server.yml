@@ -18,11 +18,11 @@ jobs:
 
     - id: action_server
       name: Build an action server with a custom actions
-      uses: ./
+      uses: Marlabs-Chatbot/demo-backend-chatbot@main
       # Full list of parameters: https://github.com/RasaHQ/action-server-gha/tree/master#input-arguments
       with:
         docker_image_name: 'keshabmanni/demo-action-server'
-        docker_image_tag: 'latest'
+        docker_image_tag: 'v1.0_a'
         docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
         docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
         requirements_file: 'requirements.txt'
