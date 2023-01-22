@@ -25,6 +25,7 @@ def connectDB(coll_name):
         print("Database connection problem: ", str(e))
 
 # query DB and send response
+# test comment
 
 
 def getResponse(response_name):
