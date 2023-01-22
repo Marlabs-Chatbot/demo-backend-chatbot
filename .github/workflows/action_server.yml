@@ -5,6 +5,8 @@ on:
       - main
     paths:
     - 'actions/**'
+    - '.github/workflows/**'
+    - 'Dockerfile'
 
 jobs:
   build_and_deploy:
