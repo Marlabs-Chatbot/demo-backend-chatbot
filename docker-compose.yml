@@ -1,34 +1,13 @@
-version: '2'
+version: '3.0'
 services:
-  rasa-server:
-    image: rasa/rasa:latest
-    working_dir: /app
-    container_name: rasa-server
-    build: "./"
+  rasa:
+    image: rasa/rasa:3.4.1-full
     ports:
       - 5005:5005
     volumes:
-      - ./actions:/app/actions
-      - ./data:/app/data
-      - ./models:/app/models
-    command: bash -c "rm -rf models/* && rasa train && rasa run --enable-api --cors \"*\""
-    networks:
-      - all
-
-  action-server:
-    image: rasa/rasa-sdk:latest
-    container_name: action-server
-    working_dir: /app
-    build: "./"
-    volumes:
-      - ./actions:/app/actions
-    ports:
-      - 5055:5055
-    command: bash -c "rasa run actions"
-    networks:
-      - all
-networks:
-  all:
-    driver: bridge
-    driver_opts:
-      com.docker.network.enable_ipv6: "true"  
+      - ./:/app
+    command:
+      - run
+  app:
+    image: keshabmanni/demo-action-server:v1.0_a
+    expose: 5055
