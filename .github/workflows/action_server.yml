@@ -21,6 +21,7 @@ jobs:
       uses: ./
       # Full list of parameters: https://github.com/RasaHQ/action-server-gha/tree/master#input-arguments
       with:
+        actions_directory: '/actions'
         docker_image_name: 'keshabmanni/demo-action-server'
         docker_image_tag: 'v1.0_a'
         docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
