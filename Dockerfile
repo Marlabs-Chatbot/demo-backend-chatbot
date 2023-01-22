@@ -11,9 +11,9 @@ USER root
 #     apt-get clean && \
 #     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# COPY ./requirements.txt /app/requirements.txt
+COPY ./requirements.txt /app/requirements.txt
 
-# RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./actions /app/actions
 
