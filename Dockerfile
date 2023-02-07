@@ -14,6 +14,7 @@ COPY ./models /app/models
 COPY ./config.yml /app/config.yml
 COPY ./domain.yml /app/domain.yml
 COPY ./endpoints.yml /app/endpoints.yml
+COPY ./credentials.yml /app/credentials.yml
 COPY ./Dockerfile /app/Dockerfile
 
 # Switch back to non-root to run code
