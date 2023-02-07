@@ -18,7 +18,7 @@ jobs:
 
     - id: rasa_server
       name: Build an rasa server
-      uses: RasaHQ/rasa-action-server-gha@main
+      uses: docker/build-push-action@v2
       # Full list of parameters: https://github.com/RasaHQ/action-server-gha/tree/master#input-arguments
       with:
         dockerfile: ./Dockerfile
