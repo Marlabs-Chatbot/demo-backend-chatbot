@@ -18,13 +18,14 @@ jobs:
 
     - id: rasa_server
       name: Build an rasa server
-      # uses: docker/build-push-action@v2
+      uses: mr-smithers-excellent/docker-build-push@v5
       # Full list of parameters: https://github.com/RasaHQ/action-server-gha/tree/master#input-arguments
       with:
         dockerfile: ./Dockerfile
-        docker_image_name: 'keshabmanni/demo-rasa-server'
-        docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
-        docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+        image: 'keshabmanni/demo-rasa-server'
+        registry: docker.io
+        username: ${{ secrets.DOCKER_HUB_LOGIN }}
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
         # More details about github context:
         # https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
-        docker_image_tag: 'v1.0'
+        tags: 'v1.1'
