@@ -1,4 +1,4 @@
-FROM rasa/rasa-sdk:latest
+FROM rasa/rasa:3.1.0
 
 WORKDIR /app
 
@@ -7,10 +7,14 @@ WORKDIR /app
 USER root
 
 # COPY requirements.txt /app/requirements.txt
-RUN pip install pymongo
+# RUN pip install pymongo
 
-COPY ./actions /app/actions
+COPY ./data /app/data
+COPY ./models /app/models
+COPY ./config.yml /app/config.yml
+COPY ./domain.yml /app/domain.yml
+COPY ./endpoints.yml /app/endpoints.yml
+COPY ./Dockerfile /app/Dockerfile
 
 # Switch back to non-root to run code
 USER 1001
-
