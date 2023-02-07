@@ -1,0 +1,3 @@
+actions/__pycache__/**
+*.pyc
+.gitignore

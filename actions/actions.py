@@ -24,7 +24,7 @@ def connectDB(coll_name):
     except pymongo.errors.ConnectionFailure as e:
         print("Database connection problem: ", str(e))
 
-# query DB and send response
+## query DB and send response
 
 
 def getResponse(response_name):
