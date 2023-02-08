@@ -1,10 +1,6 @@
-FROM rasa/rasa:3.1.0
+FROM rasa/rasa:3.4.1-full
 
 WORKDIR /app
-
-
-# Change back to root user to install dependencies
-USER root
 
 # COPY requirements.txt /app/requirements.txt
 # RUN pip install pymongo
@@ -16,6 +12,3 @@ COPY ./domain.yml /app/domain.yml
 COPY ./endpoints.yml /app/endpoints.yml
 COPY ./credentials.yml /app/credentials.yml
 COPY ./Dockerfile /app/Dockerfile
-
-# Switch back to non-root to run code
-USER 1001
