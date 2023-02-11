@@ -13,7 +13,7 @@ import random
 
 
 def connectDB(coll_name):
-    conn_str = "mongodb+srv://keshab:keshab123@cluster0.bqo0o.mongodb.net/?retryWrites=true&w=majority"
+    conn_str = "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.7.0"
     try:
         client = pymongo.MongoClient(conn_str)
         db_name = "marlabs_chatbot"
